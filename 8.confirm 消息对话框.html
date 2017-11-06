@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="button" value="点击我，弹出确认对话框" onclick="rec()">
+
+<script>
+
+    function rec() {
+
+        var message = confirm("你喜欢我吗？");
+        console.log(typeof message);
+
+        if(message == true) {
+            document.write("good");
+        }else{
+            document.write("JS功能强大，要学习噢!");
+        }
+
+
+    }
+
+</script>
+
+</body>
+</html>
